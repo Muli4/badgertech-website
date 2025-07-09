@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Badgertech Solutions Ltd</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="website icon" type="png" href="images/logo.png" />
   <script defer src="js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header id="site-header">
+  <header id="site-header" class="fade-in">
     <div class="container header-content">
       <div class="logo-wrapper">
         <a href="index.html">
@@ -19,10 +20,13 @@
         </a>
         <span class="company-name">Badgertech Solutions Ltd</span>
       </div>
-      <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="main-nav">
         <ul>
           <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
           <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
           <li><a href="clients.html"><i class="fas fa-users"></i> Clients</a></li>
           <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
@@ -32,33 +36,47 @@
   </header>
 
   <!-- About Section -->
-  <section class="about-section">
+  <section class="about-section fade-up">
     <div class="container">
-      <h2>About Us</h2>
-      <p>Badgertech Solutions Ltd is a proudly Kenyan company that provides professional fire safety and electronic security systems. Since our founding in 2018, we’ve grown from a small team of freelance technicians to a nationally recognized safety solutions provider. In 2024, we officially incorporated, reinforcing our commitment to quality, integrity, and client satisfaction.</p>
+      <h2 class="section-title">About Us</h2>
+      <p class="animate">Badgertech Solutions Ltd is a proudly Kenyan company that provides professional fire safety and electronic security systems. Since our founding in 2018, we’ve grown from a small team of freelance technicians to a nationally recognized safety solutions provider. In 2024, we officially incorporated, reinforcing our commitment to quality, integrity, and client satisfaction.</p>
 
-      <h3>Our Mission</h3>
-      <p>To provide comprehensive fire and safety solutions that surpass expectations, ensuring the utmost protection for our clients and their assets through innovation, integrity, and technical excellence.</p>
+      <h3 class="fade-in">Our Mission</h3>
+      <p class="animate">To provide comprehensive fire and safety solutions that surpass expectations, ensuring the utmost protection for our clients and their assets through innovation, integrity, and technical excellence.</p>
 
-      <h3>Our Vision</h3>
-      <p>To become the foremost provider of cutting-edge fire and safety solutions in Kenya and the region — setting the standard for innovation, compliance, and customer satisfaction.</p>
+      <h3 class="fade-in">Our Vision</h3>
+      <p class="animate">To become the foremost provider of cutting-edge fire and safety solutions in Kenya and the region — setting the standard for innovation, compliance, and customer satisfaction.</p>
 
-      <h3>Our Core Values</h3>
-      <ul class="about-values">
-        <li><i class="fas fa-star"></i> Excellence – We go beyond expectations in everything we do.</li>
-        <li><i class="fas fa-handshake"></i> Integrity – We act with honesty, transparency and professionalism.</li>
-        <li><i class="fas fa-lightbulb"></i> Innovation – We embrace smart technology and forward-thinking solutions.</li>
-        <li><i class="fas fa-user-friends"></i> Customer-Centricity – We put the client’s needs first.</li>
-        <li><i class="fas fa-chart-line"></i> Continuous Improvement – We keep growing and getting better.</li>
-      </ul>
+      <h3 class="fade-in">Our Core Values</h3>
+<ul class="about-values animate">
+  <li><i class="fas fa-star"></i> <strong>Excellence</strong> – We are committed to delivering the highest standards of quality in every service we provide, from installation to training. We believe in going above and beyond expectations to ensure safety, satisfaction, and reliability.</li>
 
-      <h3>Our Story</h3>
-      <p>Badgertech began as a group of safety-conscious professionals offering fire extinguisher installation and security systems to small businesses in Nairobi. Through word-of-mouth, hard work, and consistent service delivery, we quickly expanded our services and footprint nationwide.</p>
+  <li><i class="fas fa-handshake"></i> <strong>Integrity</strong> – At the heart of our business is trust. We maintain honesty, transparency, and professionalism in all our client interactions, ensuring that every engagement is guided by ethical conduct.</li>
 
-      <p>Today, we install advanced fire suppression systems, electric fences, hydrants, and access control systems for schools, hotels, malls, and manufacturers across Kenya. Our physical office in Nairobi enables us to coordinate projects efficiently and serve clients faster.</p>
+  <li><i class="fas fa-lightbulb"></i> <strong>Innovation</strong> – As safety and security technologies evolve, so do we. We adopt modern tools like clean agent suppression systems, access control, and surveillance tech to keep our clients ahead of threats and compliance standards.</li>
 
-      <h3>Our Team</h3>
-      <div class="team-carousel-container">
+  <li><i class="fas fa-user-friends"></i> <strong>Customer-Centricity</strong> – We listen closely to our clients' needs and tailor our services accordingly. Whether it’s a school, mall, hospital, or private residence, we provide personalized, affordable, and scalable safety solutions.</li>
+
+  <li><i class="fas fa-chart-line"></i> <strong>Continuous Improvement</strong> – We constantly invest in staff training, service refinement, and updated tools to ensure we stay relevant, efficient, and competitive in the industry. Learning and improvement are embedded in our DNA.</li>
+</ul>
+
+
+<h3 class="fade-in">Our Story</h3>
+
+<p class="animate">
+  Badgertech Solutions Ltd began in 2018 as a small team of freelance technicians dedicated to improving fire safety awareness across Nairobi. Our early days were spent walking into shops, schools, and apartments offering to inspect extinguishers, install basic systems, and educate tenants on safety. Our commitment to honest work and our affordable pricing quickly earned us referrals, and our portfolio started growing organically.
+</p>
+
+<p class="animate">
+  Over the years, we expanded our services to include high-end fire suppression systems, electric fencing, CCTV surveillance, and access control technology. We invested in certification, compliance, and tools to serve clients at a professional level. By 2024, we became fully incorporated — Badgertech Solutions Ltd — signaling a new era of structured operations, corporate service delivery, and national reach.
+</p>
+
+<p class="animate">
+  Today, we serve a diverse range of clients across Kenya including learning institutions, commercial buildings, malls, manufacturers, and residential estates. With a growing team of trained experts and a physical office in Nairobi, we continue to build trust and deliver safety — one system at a time.
+</p>
+
+      <h3 class="fade-in">Our Team</h3>
+      <div class="team-carousel-container animate">
         <div class="team-carousel" id="team-carousel">
           <div class="team-member">
             <img src="images/logo.png" alt="John Mwangi">
@@ -81,12 +99,10 @@
             <p>Training Coordinator</p>
           </div>
         </div>
-        <button class="carousel-btn prev" onclick="scrollTeam(-1)">&#10094;</button>
-        <button class="carousel-btn next" onclick="scrollTeam(1)">&#10095;</button>
       </div>
 
-      <h3>Industries We Serve</h3>
-      <ul class="about-values">
+      <h3 class="fade-in">Industries We Serve</h3>
+      <ul class="about-values animate">
         <li><i class="fas fa-school"></i> Schools & Academic Institutions</li>
         <li><i class="fas fa-hotel"></i> Hotels, Resorts & Apartments</li>
         <li><i class="fas fa-clinic-medical"></i> Hospitals & Health Centers</li>
@@ -98,11 +114,45 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Badgertech Logo" />
+        <h4>Badgertech Solutions Ltd</h4>
+        <p>Protecting Lives. Securing Property.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About</a></li>
+          <li><a href="services.html"><i class="fas fa-angle-right"></i> Services</a></li>
+          <li><a href="clients.html"><i class="fas fa-angle-right"></i> Clients</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> info@badgertech.co.ke</p>
+        <p><i class="fas fa-phone"></i> +254 7XX XXX XXX</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
       <p>&copy; 2025 Badgertech Solutions Ltd. All rights reserved.</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>

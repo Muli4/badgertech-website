@@ -18,3 +18,22 @@ function scrollTeam(direction) {
     behavior: "smooth"
   });
 }
+function toggleMenu() {
+  const nav = document.getElementById("main-nav").querySelector("ul");
+  nav.classList.toggle("show");
+}
+
+// Scroll animation
+const elementsToAnimate = document.querySelectorAll('.fade-in, .fade-up, .animate');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+elementsToAnimate.forEach(el => observer.observe(el));
