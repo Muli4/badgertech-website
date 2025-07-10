@@ -36,17 +36,40 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero fade-up">
-    <div class="container">
-      <h2 class="animate">Protecting Lives. Securing Property.</h2>
-      <p class="animate">Badgertech Solutions Ltd is a trusted leader in fire protection, electronic security, and safety training services across Kenya.</p>
-      <p class="animate">Since 2018, we have been delivering innovative and reliable solutions to schools, hotels, corporate offices, shopping malls, and industrial plants.</p>
-      <p class="animate">Whether you need fire extinguishers, CCTV installation, access control, electric fencing, or fire alarm systems — we’ve got you covered with unmatched professionalism and nationwide reach.</p>
-      <p class="animate">Partner with Badgertech today and gain peace of mind knowing that your people, property, and operations are fully protected by certified experts.</p>
-      <a href="services.html" class="btn animate"><i class="fas fa-cogs"></i> Explore Services</a>
-      <a href="contact.html" class="btn-secondary animate"><i class="fas fa-phone"></i> Get in Touch</a>
+  <section class="hero-slider fade-up">
+  <div class="slider" id="hero-slider">
+    <div class="slide active" style="background-image: url('images/training.jpg');">
+      <div class="slide-content">
+        <h2>Protecting Lives. Securing Property.</h2>
+        <p>Professional fire safety & security solutions across Kenya.</p>
+        <a href="services.html" class="btn">Explore Services</a>
+        <a href="contact.html" class="btn-secondary">Get in Touch</a>
+      </div>
     </div>
-  </section>
+    <div class="slide" style="background-image: url('images/cctv.jpg');">
+      <div class="slide-content">
+        <h2>Reliable. Certified. Nationwide.</h2>
+        <p>From extinguishers to CCTV – trust Badgertech to protect what matters most.</p>
+        <a href="services.html" class="btn">Our Work</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/electrical.jpg');">
+      <div class="slide-content">
+        <h2>Custom Safety Solutions</h2>
+        <p>Tailored protection for schools, malls, industries, and homes.</p>
+        <a href="about.html" class="btn">About Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider-controls">
+    <span onclick="changeSlide(-1)">&#10094;</span>
+    <span onclick="changeSlide(1)">&#10095;</span>
+  </div>
+</section>
+<div class="scroll-indicator fade-up">
+  <i class="fas fa-angle-down"></i>
+</div>
+
 
   <!-- Highlights Section -->
   <section class="highlight fade-up">
@@ -74,6 +97,8 @@
       </div>
     </div>
   </section>
+
+  
 
   <!-- Certifications -->
   <section class="certifications fade-up">
@@ -190,6 +215,32 @@
   </div>
 </footer>
 
+<!-- Floating Chat Icon -->
+<div class="chat-toggle" onclick="toggleChat()">
+  <i class="fas fa-comments"></i>
+</div>
+
+<!-- Chatbot Box -->
+<div class="chatbot-box" id="chatbot-box">
+  <div class="chat-header">
+    <h4>BadgerBot</h4>
+    <span onclick="toggleChat()">&times;</span>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="chat-message bot">👋 Hello! How can I help you today?</div>
+  </div>
+  <div class="chat-buttons">
+    <button onclick="chatBotReply(0)">1. Do you offer free site visits?</button>
+    <button onclick="chatBotReply(1)">2. How fast can you respond?</button>
+    <button onclick="chatBotReply(2)">3. Do you offer staff training?</button>
+    <button onclick="chatBotReply(3)">4. Where is your office?</button>
+    <button onclick="chatBotReply(4)">5. Do you install CCTV?</button>
+    <button onclick="chatBotReply(5)">6. Do you handle schools and hospitals?</button>
+    <button onclick="chatBotReply(6)">7. How long have you been operating?</button>
+    <button onclick="clearChat()">🧹 Clear Chat</button>
+  </div>
+  <audio id="chat-sound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto"></audio>
+</div>
 
 
 </body>
