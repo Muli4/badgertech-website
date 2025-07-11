@@ -1,3 +1,4 @@
+// === Sticky Header Hide/Show on Scroll ===
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function () {
   const currentScrollPos = window.pageYOffset;
@@ -10,6 +11,7 @@ window.onscroll = function () {
   prevScrollPos = currentScrollPos;
 };
 
+// === Team Carousel Scroller ===
 function scrollTeam(direction) {
   const container = document.getElementById("team-carousel");
   const scrollAmount = 270;
@@ -18,25 +20,38 @@ function scrollTeam(direction) {
     behavior: "smooth"
   });
 }
+
+// === Mobile Nav Toggle ===
 function toggleMenu() {
   const nav = document.getElementById("main-nav").querySelector("ul");
   nav.classList.toggle("show");
 }
 
-// Scroll animation
+// === Scroll Animation (Intersection Observer with visibility fix) ===
 const elementsToAnimate = document.querySelectorAll('.fade-in, .fade-up, .animate');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
+      observer.unobserve(entry.target); // stop watching once shown
     }
   });
 }, {
-  threshold: 0.2
+  threshold: 0.01
 });
 
-elementsToAnimate.forEach(el => observer.observe(el));
+elementsToAnimate.forEach(el => {
+  observer.observe(el);
+
+  // Immediately show if already in viewport on load
+  const rect = el.getBoundingClientRect();
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+    el.classList.add('show');
+  }
+});
+
+// === Hero Slider ===
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -47,6 +62,9 @@ function showSlide(index) {
   });
 }
 
+// Initialize first slide
+showSlide(currentSlide);
+
 function changeSlide(step) {
   currentSlide = (currentSlide + step + slides.length) % slides.length;
   showSlide(currentSlide);
@@ -55,11 +73,13 @@ function changeSlide(step) {
 // Auto slide every 7 seconds
 setInterval(() => changeSlide(1), 7000);
 
+// === Floating Chat Toggle ===
 function toggleChat() {
   const chatBox = document.getElementById("chatbot-box");
   chatBox.style.display = (chatBox.style.display === "flex") ? "none" : "flex";
 }
 
+// === Chat Bot Logic ===
 function chatBotReply(index) {
   const chatBody = document.getElementById("chat-body");
   const sound = document.getElementById("chat-sound");
@@ -84,35 +104,29 @@ function chatBotReply(index) {
     "🕒 We've been in operation since 2018 and incorporated in 2024."
   ];
 
-  // User question
+  // Add user message
   const userMsg = document.createElement("div");
   userMsg.className = "chat-message user";
   userMsg.textContent = questions[index];
   chatBody.appendChild(userMsg);
 
-  // Bot response
+  // Add bot response
   setTimeout(() => {
     const botMsg = document.createElement("div");
     botMsg.className = "chat-message bot";
     botMsg.textContent = answers[index];
     chatBody.appendChild(botMsg);
     chatBody.scrollTop = chatBody.scrollHeight;
-    sound.play();
+
+    // Play sound
+    if (sound && typeof sound.play === "function") {
+      sound.play().catch(() => {});
+    }
   }, 500);
 }
 
-// Clear chat
+// === Clear Chat Button ===
 function clearChat() {
   const chatBody = document.getElementById("chat-body");
   chatBody.innerHTML = '<div class="chat-message bot">👋 Hello! How can I help you today?</div>';
 }
-
-// Auto-open after 10 seconds (homepage only)
-window.addEventListener("DOMContentLoaded", () => {
-  const isHomepage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
-  if (isHomepage) {
-    setTimeout(() => {
-      document.getElementById("chatbot-box").style.display = "flex";
-    }, 10000);
-  }
-});
