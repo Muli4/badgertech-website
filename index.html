@@ -5,177 +5,369 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Badgertech Solutions Ltd</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="website icon" type="png" href="images/logo.png">
+  <link rel="icon" type="image/png" href="images/logo.png" />
   <script defer src="js/script.js"></script>
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header id="site-header" class="fade-in">
-    <div class="container header-content">
-      <div class="logo-wrapper">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Badgertech Logo" class="logo" />
-        </a>
-        <span class="company-name">Badgertech Solutions Ltd</span>
+  <!-- Top Bar (Desktop Only) -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="left-info">
+        <span><i class="fas fa-phone-alt"></i> +254 741 591 327 | +254 729 105 254 | +254 784 105 254</span>
+        <span><a href="mailto:info@badgertech.co.ke"><i class="fas fa-envelope"></i> info@badgertech.co.ke</a></span>
+        <span><i class="fas fa-clock"></i> Mon - Fri: 8:00am - 4:30pm | Sat: 8:00am - 1:00pm</span>
       </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Badgertech Logo" class="logo" />
+          <span class="company-name">Badgertech Solutions Ltd</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="menu-toggle" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-          <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-          <li><a href="clients.html"><i class="fas fa-users"></i> Clients</a></li>
-          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
-
-  <!-- Hero Section -->
-  <section class="hero-slider fade-up">
-  <div class="slider" id="hero-slider">
-    <div class="slide active" style="background-image: url('images/training.jpg');">
-      <div class="slide-content">
-        <h2>Protecting Lives. Securing Property.</h2>
-        <p>Professional fire safety & security solutions across Kenya.</p>
-        <a href="services.html" class="btn">Explore Services</a>
-        <a href="contact.html" class="btn-secondary">Get in Touch</a>
+<!-- HERO SECTION STARTS HERE-->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 class="animate-drop from-top">Welcome to Badgertech Solutions Ltd</h1>
+      <p class="animate-drop from-left">
+        We are Kenya’s trusted partner in fire protection, security systems, and safety training. Since 2018, we’ve helped schools, businesses, and institutions protect lives and secure property with certified, innovative solutions.
+      </p>
+      <div class="hero-buttons animate-drop from-bottom">
+        <a href="services.html" class="btn-primary">Explore Services</a>
+        <a href="contact.html" class="btn-secondary">Request a Quote</a>
       </div>
     </div>
-    <div class="slide" style="background-image: url('images/cctv.jpg');">
-      <div class="slide-content">
-        <h2>Reliable. Certified. Nationwide.</h2>
-        <p>From extinguishers to CCTV – trust Badgertech to protect what matters most.</p>
-        <a href="services.html" class="btn">Our Work</a>
-      </div>
-    </div>
-    <div class="slide" style="background-image: url('images/electrical.jpg');">
-      <div class="slide-content">
-        <h2>Custom Safety Solutions</h2>
-        <p>Tailored protection for schools, malls, industries, and homes.</p>
-        <a href="about.html" class="btn">About Us</a>
-      </div>
-    </div>
-  </div>
-  <div class="slider-controls">
-    <span onclick="changeSlide(-1)">&#10094;</span>
-    <span onclick="changeSlide(1)">&#10095;</span>
   </div>
 </section>
-<div class="scroll-indicator fade-up">
-  <i class="fas fa-angle-down"></i>
-</div>
 
 
-  <!-- Highlights Section -->
-  <section class="highlight fade-up">
-    <div class="container">
-      <h2 class="section-title animate">What We Offer</h2>
-      <div class="highlight-cards">
-        <div class="card animate">
-          <i class="fas fa-fire-extinguisher fa-2x"></i>
-          <h3>Fire Protection</h3>
-          <p>We design, install and maintain comprehensive fire safety systems including extinguishers, fire pumps, suppression systems, and training. Our certified professionals ensure your facility is safe, compliant, and ready.</p>
-          <a href="services.html" class="btn-card">Learn More</a>
-        </div>
-        <div class="card animate">
-          <i class="fas fa-video fa-2x"></i>
-          <h3>Surveillance Systems</h3>
-          <p>From small retail setups to corporate buildings, we install modern CCTV and access control systems with remote access, motion sensors and night vision to help you monitor, control, and secure your space.</p>
-          <a href="services.html" class="btn-card">Learn More</a>
-        </div>
-        <div class="card animate">
-          <i class="fas fa-bolt fa-2x"></i>
-          <h3>Perimeter Security</h3>
-          <p>Keep intruders at bay with high-voltage electric fencing integrated with alarm triggers and smart monitoring. Our fences are built to last and backed with professional installation and support.</p>
-          <a href="services.html" class="btn-card">Learn More</a>
-        </div>
+<section class="why-badgertech">
+  <div class="container">
+    <h2 class="section-title animate-drop from-top">Why Choose Badgertech?</h2>
+    <p class="section-intro animate-drop from-left">
+      Since 2018, we've built a strong reputation as one of Kenya’s most reliable safety and security solution providers. Here’s why hundreds of clients trust us:
+    </p>
+
+    <div class="why-grid">
+      <div class="why-card animate-drop from-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/4359/4359951.png" alt="Experience Icon">
+        <h3>6+ Years of Experience</h3>
+        <p>We’ve delivered successful safety and security projects for schools, malls, factories, hospitals, and homes across Kenya.</p>
+      </div>
+
+      <div class="why-card animate-drop from-right">
+        <img src="https://cdn-icons-png.flaticon.com/512/2950/2950651.png" alt="Certified Experts">
+        <h3>Certified Experts</h3>
+        <p>Our technicians and trainers are certified and updated on fire safety codes, electronic systems, and compliance standards.</p>
+      </div>
+
+      <div class="why-card animate-drop from-bottom">
+        <img src="https://cdn-icons-png.flaticon.com/512/1632/1632670.png" alt="Modern Tools">
+        <h3>Modern Tools & Tech</h3>
+        <p>We use the latest fire suppression systems, surveillance tech, and access control tools to protect lives and assets efficiently.</p>
+      </div>
+
+      <div class="why-card animate-drop from-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/3523/3523887.png" alt="Fast Response">
+        <h3>Fast Response Times</h3>
+        <p>Our mobile units are always ready. Whether it’s installation, inspection, or emergency servicing — we act fast and professionally.</p>
+      </div>
+
+      <div class="why-card animate-drop from-right">
+        <img src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="Support Icon">
+        <h3>Dedicated Support</h3>
+        <p>From free site assessments to after-installation care, our support team ensures smooth service from start to finish.</p>
+      </div>
+
+      <div class="why-card animate-drop from-bottom">
+        <img src="https://cdn-icons-png.flaticon.com/512/943/943593.png" alt="Compliance Icon">
+        <h3>Fully Compliant</h3>
+        <p>We are licensed by the Kenya Fire Safety Authority and adhere strictly to government safety and insurance regulations.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  
-
-  <!-- Certifications -->
-  <section class="certifications fade-up">
-    <div class="container">
-      <h2 class="section-title animate">Certified, Licensed & Trusted</h2>
-      <ul class="cert-list animate">
-        <li><i class="fas fa-certificate"></i> Licensed by Kenya Fire Safety Authority</li>
-        <li><i class="fas fa-user-shield"></i> Certified Safety & Security Professionals</li>
-        <li><i class="fas fa-award"></i> 6+ Years in the Fire & Safety Industry</li>
-        <li><i class="fas fa-check-circle"></i> Member of National Safety Association</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="industries fade-up">
+<section class="our-services">
   <div class="container">
-    <h2 class="section-title">Industries We Serve</h2>
+    <h2 class="section-title animate-drop from-top">Our Services</h2>
+    <p class="section-intro animate-drop from-bottom">
+      We offer a wide range of professional safety and security services tailored to protect people, property, and operations across Kenya.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card animate-drop from-left">
+        <img src="images/fire-extinguisher.jpg" alt="Fire Extinguishers">
+        <h3>Fire Extinguishers</h3>
+        <p>Installation, refilling and maintenance of certified fire extinguishers for all facilities and vehicles.</p>
+        <a href="services.html#fire-extinguishers" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-right">
+        <img src="images/electric fence.jpg" alt="Electric Fencing">
+        <h3>Electric Fences</h3>
+        <p>Custom perimeter fencing with high-voltage deterrence and intrusion alarms for homes and businesses.</p>
+        <a href="services.html#electric-fences" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-bottom">
+        <img src="images/cctv.jpg" alt="CCTV & Access Control">
+        <h3>CCTV & Access Control</h3>
+        <p>Smart surveillance systems, intercoms and access control tailored to institutions and corporations.</p>
+        <a href="services.html#cctv" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-left">
+        <img src="images/ppe.jpg" alt="PPE Supplies">
+        <h3>PPE Equipment</h3>
+        <p>Supply of boots, overalls, helmets, goggles and other safety wear for industrial and construction sites.</p>
+        <a href="services.html#ppe" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-right">
+        <img src="images/training.jpg" alt="Fire Training">
+        <h3>Fire Drill & Training</h3>
+        <p>Hands-on staff training, fire marshal courses, and emergency evacuation drills for safety compliance.</p>
+        <a href="services.html#training" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-bottom">
+        <img src="images/fire alarm.jpg" alt="Suppression Systems">
+        <h3>Fire Alarm & Suppression</h3>
+        <p>Installation of fire alarms, clean agent suppression units and automatic detection solutions.</p>
+        <a href="services.html#suppression" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-left">
+        <img src="images/fire-pump.jpg" alt="Hydrants & Pumps">
+        <h3>Fire Pumps & Hydrants</h3>
+        <p>Design and installation of hydrant lines, hose reels, and industrial fire pump systems.</p>
+        <a href="services.html#hydrants" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-right">
+        <img src="images/solar energy.jpg" alt="Electrical">
+        <h3>Solar Installation</h3>
+        <p>Electrical wiring, maintenance, solar power systems and energy backup installations.</p>
+        <a href="services.html#electrical" class="view-btn">View More</a>
+      </div>
+
+      <div class="service-card animate-drop from-bottom">
+        <img src="images/hvac.jpg" alt="HVAC Systems">
+        <h3>HVAC Systems</h3>
+        <p>Design and installation of air conditioning, ventilation and heating solutions for commercial spaces.</p>
+        <a href="services.html#hvac" class="view-btn">View More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="industries">
+  <div class="container">
+    <h2 class="section-title animate-drop from-top">Industries We Serve</h2>
+    <p class="section-intro animate-drop from-bottom">
+      Badgertech Solutions Ltd proudly serves a wide range of industries across Kenya, helping institutions and businesses stay secure and compliant.
+    </p>
+
     <div class="industries-grid">
-      <div class="industry"><i class="fas fa-school"></i> Education</div>
-      <div class="industry"><i class="fas fa-hotel"></i> Hospitality</div>
-      <div class="industry"><i class="fas fa-store"></i> Retail & Malls</div>
-      <div class="industry"><i class="fas fa-industry"></i> Manufacturing</div>
-      <div class="industry"><i class="fas fa-clinic-medical"></i> Healthcare</div>
-      <div class="industry"><i class="fas fa-building"></i> Corporate Offices</div>
+      <div class="industry-card animate-drop from-left">
+        <i class="fas fa-school"></i>
+        <h4>Education</h4>
+        <p>We offer fire extinguishers, alarms, drills, and CCTV for schools, colleges, and universities.</p>
+      </div>
+      <div class="industry-card animate-drop from-right">
+        <i class="fas fa-hotel"></i>
+        <h4>Hospitality</h4>
+        <p>From access control to alarm systems, we protect hotels, lodges, and apartments nationwide.</p>
+      </div>
+      <div class="industry-card animate-drop from-bottom">
+        <i class="fas fa-clinic-medical"></i>
+        <h4>Healthcare</h4>
+        <p>We secure hospitals and clinics with alarms, hydrants, PPEs, and emergency preparedness.</p>
+      </div>
+      <div class="industry-card animate-drop from-left">
+        <i class="fas fa-store-alt"></i>
+        <h4>Retail & Malls</h4>
+        <p>Fire suppression, surveillance, and safety systems for malls and shopping centers.</p>
+      </div>
+      <div class="industry-card animate-drop from-right">
+        <i class="fas fa-industry"></i>
+        <h4>Manufacturing</h4>
+        <p>Hydrants, fire pumps, PPEs and evacuation systems for factories and industrial facilities.</p>
+      </div>
+      <div class="industry-card animate-drop from-bottom">
+        <i class="fas fa-building"></i>
+        <h4>Corporate Buildings</h4>
+        <p>Electrical installations, access systems, and compliance checks for office complexes.</p>
+      </div>
     </div>
   </div>
 </section>
 
-  <section class="stats fade-up">
+<section class="certifications">
   <div class="container">
+    <h2 class="section-title animate-drop from-top">Certifications & Licenses</h2>
+    <p class="section-intro animate-drop from-bottom">
+      Badgertech Solutions Ltd is a fully licensed, certified, and trusted safety and security provider, committed to quality service and national compliance.
+    </p>
+
+    <div class="certification-grid">
+      <div class="cert-card animate-drop from-left">
+        <i class="fas fa-certificate"></i>
+        <h4>Licensed by Kenya Fire Safety Authority</h4>
+        <p>We are approved and regulated to operate nationally in the fire protection industry.</p>
+      </div>
+
+      <div class="cert-card animate-drop from-right">
+        <i class="fas fa-user-shield"></i>
+        <h4>Certified Safety Technicians</h4>
+        <p>Our technicians and trainers hold verified credentials in safety system installation and compliance.</p>
+      </div>
+
+      <div class="cert-card animate-drop from-bottom">
+        <i class="fas fa-award"></i>
+        <h4>Member - National Safety Association</h4>
+        <p>We are members of recognized safety associations promoting best practices and innovation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-highlights">
+  <div class="container">
+    <h2 class="section-title animate-drop from-top">Project Highlights</h2>
+    <p class="section-intro animate-drop from-bottom">
+      We’ve completed safety and security projects for schools, malls, and institutions across Kenya. Below are some of our most notable installations.
+    </p>
+
+    <div class="projects-grid">
+      <div class="project-card animate-drop from-left">
+        <img src="images/kwale girls.jpg" alt="Kwale Girls Project">
+        <h4>Kwale Girls High School</h4>
+        <p>Full fire alarm system installed and a comprehensive fire drill training conducted for students and staff.</p>
+      </div>
+
+      <div class="project-card animate-drop from-bottom">
+        <img src="images/go getter.webp" alt="Go Getter Academy">
+        <h4>Go Getter Academy</h4>
+        <p>Deployed biometric access control at all classroom entries and installed school-wide CCTV surveillance.</p>
+      </div>
+
+      <div class="project-card animate-drop from-right">
+        <img src="images/oasis mall.jpeg" alt="Oasis Mall Project">
+        <h4>Oasis Mall, Malindi</h4>
+        <p>Installed a full hydrant system, high-capacity fire pumps, and over 30 CCTV cameras covering interior and exterior zones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="container">
+    <h2 class="section-title animate-drop from-top">What Our Clients Say</h2>
+    <p class="section-intro animate-drop from-bottom">
+      We take pride in delivering professional, reliable, and timely services. Here's what our clients say about working with us.
+    </p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-drop from-left">
+        <p>"Badgertech installed our entire fire alarm system and conducted an amazing fire drill session for our staff and students. Truly professional!"</p>
+        <strong>- Principal, Kwale Girls High School</strong>
+      </div>
+
+      <div class="testimonial-card animate-drop from-bottom">
+        <p>"They installed CCTV and biometric access control across our school. The setup was smooth, efficient, and works perfectly."</p>
+        <strong>- Administrator, Go Getter Academy</strong>
+      </div>
+
+      <div class="testimonial-card animate-drop from-right">
+        <p>"We’ve partnered with Badgertech on several projects across our mall branches. Their fire safety systems and surveillance are top-notch."</p>
+        <strong>- Manager, Oasis Mall, Malindi</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container">
+    <h2 class="section-title animate-drop from-top">Our Impact in Numbers</h2>
+    <p class="section-intro animate-drop from-bottom">
+      Over the years, Badgertech Solutions Ltd has grown into one of Kenya’s trusted fire and security service providers.
+    </p>
+
     <div class="stats-grid">
-      <div class="stat-box">
+      <div class="stat-box animate-drop from-left">
         <i class="fas fa-users"></i>
         <h3>200+</h3>
         <p>Clients Served</p>
       </div>
-      <div class="stat-box">
+      <div class="stat-box animate-drop from-right">
         <i class="fas fa-project-diagram"></i>
         <h3>300+</h3>
         <p>Projects Completed</p>
       </div>
-      <div class="stat-box">
-        <i class="fas fa-calendar-check"></i>
+      <div class="stat-box animate-drop from-left">
+        <i class="fas fa-calendar-alt"></i>
         <h3>6+</h3>
         <p>Years of Experience</p>
       </div>
-      <div class="stat-box">
-        <i class="fas fa-users-cog"></i>
+      <div class="stat-box animate-drop from-right">
+        <i class="fas fa-tools"></i>
         <h3>25+</h3>
-        <p>Team Experts</p>
+        <p>Expert Technicians</p>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials fade-up">
-    <div class="container">
-      <h2 class="section-title animate">What Our Clients Say</h2>
-      <div class="testimonial-cards">
-        <div class="testimonial animate">
-          <p>"Badgertech provided excellent fire training for our staff. Very professional and friendly!"</p>
-          <strong>- LMS Guest House</strong>
-        </div>
-        <div class="testimonial animate">
-          <p>"We’ve worked with Badgertech on multiple projects. Their CCTV and alarm systems are top-notch."</p>
-          <strong>- Go Getter Academy</strong>
-        </div>
-        <div class="testimonial animate">
-          <p>"From quotation to installation, their team was efficient, affordable and transparent."</p>
-          <strong>- Oasis Mall, Malindi</strong>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="newsletter-section">
+  <div class="container">
+    <h2 class="section-title animate-drop from-top">Stay Connected With Us</h2>
+    <p class="section-intro animate-drop from-bottom">
+      Subscribe to receive the latest updates, safety tips, product alerts, and special offers from Badgertech Solutions Ltd.
+    </p>
+    
+    <form class="newsletter-form animate-drop from-left">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+    </form>
 
-<footer class="footer fade-in">
+    <p class="privacy-text animate-drop from-bottom">
+      <i class="fas fa-shield-alt"></i> We respect your privacy. No spam, ever.
+    </p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+  <footer class="footer fade-in">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
@@ -214,34 +406,46 @@
     </div>
   </footer>
 
-<!-- Floating Chat Icon -->
-<div class="chat-toggle" onclick="toggleChat()">
-  <i class="fas fa-comments"></i>
+  <!-- Floating WhatsApp Button -->
+<div class="whatsapp-widget" id="whatsappWidget">
+  <div class="whatsapp-header">
+    <img src="images/logo.png" alt="Badgertech Logo">
+    <p>Our customer support team is here to answer your questions. Ask us anything!</p>
+  </div>
+  <div class="whatsapp-body">
+    <input type="text" placeholder="Hello, how can we help?" id="whatsappInput">
+    <button onclick="sendWhatsAppMessage()">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
 </div>
 
-<!-- Chatbot Box -->
-<div class="chatbot-box" id="chatbot-box">
-  <div class="chat-header">
-    <h4>BadgerBot</h4>
-    <span onclick="toggleChat()">&times;</span>
-  </div>
-  <div class="chat-body" id="chat-body">
-    <div class="chat-message bot">👋 Hello! How can I help you today?</div>
-  </div>
-  <div class="chat-buttons">
-    <button onclick="chatBotReply(0)">1. Do you offer free site visits?</button>
-    <button onclick="chatBotReply(1)">2. How fast can you respond?</button>
-    <button onclick="chatBotReply(2)">3. Do you offer staff training?</button>
-    <button onclick="chatBotReply(3)">4. Where is your office?</button>
-    <button onclick="chatBotReply(4)">5. Do you install CCTV?</button>
-    <button onclick="chatBotReply(5)">6. Do you handle schools and hospitals?</button>
-    <button onclick="chatBotReply(6)">7. How long have you been operating?</button>
-    <button onclick="clearChat()">🧹 Clear Chat</button>
-  </div>
-  <audio id="chat-sound" src="https://cdn.jsdelivr.net/gh/ThatOneCalculator/SFX@latest/beep.mp3" preload="auto"></audio>
-
+<!-- Toggle Button -->
+<div class="whatsapp-toggle" onclick="toggleWhatsAppWidget()">
+  <i class="fab fa-whatsapp"></i>
+  <span>Hi, how can we help?</span>
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-drop");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+
+</script>
 
 </body>
 </html>

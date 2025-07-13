@@ -11,97 +11,239 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header id="site-header" class="fade-in">
-    <div class="container header-content">
-      <div class="logo-wrapper">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Badgertech Logo" class="logo" />
-        </a>
-        <span class="company-name">Badgertech Solutions Ltd</span>
+  <!-- Top Bar (Desktop Only) -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="left-info">
+        <span><i class="fas fa-phone-alt"></i> +254 741 591 327 | +254 729 105 254 | +254 784 105 254</span>
+        <span><a href="mailto:info@badgertech.co.ke"><i class="fas fa-envelope"></i> info@badgertech.co.ke</a></span>
+        <span><i class="fas fa-clock"></i> Mon - Fri: 8:00am - 4:30pm | Sat: 8:00am - 1:00pm</span>
       </div>
+      <div class="right-links">
+        <a href="#">Resources</a>
+        <a href="#">Careers</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Badgertech Logo" class="logo" />
+          <span class="company-name">Badgertech Solutions Ltd</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="menu-toggle" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
-          <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-          <li><a href="clients.html"><i class="fas fa-users"></i> Clients</a></li>
-          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about-section fade-up">
-    <div class="container">
-      <h2 class="section-title">About Us</h2>
-      <p class="animate">Badgertech Solutions Ltd is a proudly Kenyan company that provides professional fire safety and electronic security systems. Since our founding in 2018, we’ve grown from a small team of freelance technicians to a nationally recognized safety solutions provider. In 2024, we officially incorporated, reinforcing our commitment to quality, integrity, and client satisfaction.</p>
+  <section class="about-banner fade-down">
+  <div class="container">
+    <h1 class="section-title">About Badgertech Solutions Ltd</h1>
+    <p class="intro-text fade-left">We are a proudly Kenyan company delivering fire safety and electronic security systems with precision, professionalism, and passion. Since 2018, we've grown into a nationally recognized safety partner for institutions and businesses.</p>
+  </div>
+</section>
 
-      <h3 class="fade-in">Our Mission</h3>
-      <p class="animate">To provide comprehensive fire and safety solutions that surpass expectations, ensuring the utmost protection for our clients and their assets through innovation, integrity, and technical excellence.</p>
+<section class="our-story">
+  <div class="container">
+    <h2 class="section-title fade-down">Our Story</h2>
 
-      <h3 class="fade-in">Our Vision</h3>
-      <p class="animate">To become the foremost provider of cutting-edge fire and safety solutions in Kenya and the region — setting the standard for innovation, compliance, and customer satisfaction.</p>
+    <p class="animate fade-right">
+      Badgertech Solutions Ltd began in 2018 as a small group of freelance safety technicians. Armed with passion and a commitment to make Kenyan homes, institutions, and businesses safer, we started by offering basic fire extinguisher services and security installations in Nairobi.
+    </p>
 
-      <h3 class="fade-in">Our Core Values</h3>
-<ul class="about-values animate">
-  <li><i class="fas fa-star"></i> <strong>Excellence</strong> – We are committed to delivering the highest standards of quality in every service we provide, from installation to training. We believe in going above and beyond expectations to ensure safety, satisfaction, and reliability.</li>
+    <p class="animate fade-left">
+      Through consistent service, professionalism, and referrals, we expanded our services to include fire suppression systems, electric fencing, CCTV surveillance, hydrant systems, and access control technologies. We served schools, malls, factories, and hotels—ensuring safety was no longer optional, but essential.
+    </p>
 
-  <li><i class="fas fa-handshake"></i> <strong>Integrity</strong> – At the heart of our business is trust. We maintain honesty, transparency, and professionalism in all our client interactions, ensuring that every engagement is guided by ethical conduct.</li>
+    <p class="animate fade-up">
+      In 2024, we officially incorporated as <strong>Badgertech Solutions Ltd</strong>, reinforcing our commitment to certified service delivery, nationwide coverage, and technical excellence. Today, we are a trusted name in safety systems across Kenya.
+    </p>
+  </div>
+</section>
 
-  <li><i class="fas fa-lightbulb"></i> <strong>Innovation</strong> – As safety and security technologies evolve, so do we. We adopt modern tools like clean agent suppression systems, access control, and surveillance tech to keep our clients ahead of threats and compliance standards.</li>
-
-  <li><i class="fas fa-user-friends"></i> <strong>Customer-Centricity</strong> – We listen closely to our clients' needs and tailor our services accordingly. Whether it’s a school, mall, hospital, or private residence, we provide personalized, affordable, and scalable safety solutions.</li>
-
-  <li><i class="fas fa-chart-line"></i> <strong>Continuous Improvement</strong> – We constantly invest in staff training, service refinement, and updated tools to ensure we stay relevant, efficient, and competitive in the industry. Learning and improvement are embedded in our DNA.</li>
-</ul>
-
-
-<h3 class="fade-in">Our Story</h3>
-
-<p class="animate">
-  Badgertech Solutions Ltd began in 2018 as a small team of freelance technicians dedicated to improving fire safety awareness across Nairobi. Our early days were spent walking into shops, schools, and apartments offering to inspect extinguishers, install basic systems, and educate tenants on safety. Our commitment to honest work and our affordable pricing quickly earned us referrals, and our portfolio started growing organically.
-</p>
-
-<p class="animate">
-  Over the years, we expanded our services to include high-end fire suppression systems, electric fencing, CCTV surveillance, and access control technology. We invested in certification, compliance, and tools to serve clients at a professional level. By 2024, we became fully incorporated — Badgertech Solutions Ltd — signaling a new era of structured operations, corporate service delivery, and national reach.
-</p>
-
-<p class="animate">
-  Today, we serve a diverse range of clients across Kenya including learning institutions, commercial buildings, malls, manufacturers, and residential estates. With a growing team of trained experts and a physical office in Nairobi, we continue to build trust and deliver safety — one system at a time.
-</p>
-
-      <h3 class="fade-in">Our Team</h3>
-      <div class="team-carousel-container animate">
-        <div class="team-carousel" id="team-carousel">
-          <div class="team-member">
-            <img src="images/logo.png" alt="John Mwangi">
-            <h4>Rosyln Muthoni Peter</h4>
-            <p>Director</p>
-          </div>
-          <div class="team-member">
-            <img src="images/logo.png" alt="Grace Njeri">
-            <h4>Brenda Atieno Ogutu</h4>
-            <p>Director</p>
-          </div>
+<section class="mission-vision-card fade-up">
+  <div class="container">
+    <div class="mv-card-one">
+      <!-- Mission -->
+      <div class="mv-block slide-in-left">
+        <div class="mv-icon">
+          <img src="images/mission.png" alt="Mission Icon">
+        </div>
+        <div class="mv-text">
+          <h3 class="mv-heading mission">Mission</h3>
+          <p>
+            To provide comprehensive fire and safety solutions that surpass expectations, ensuring the utmost protection for our clients and their assets. We are dedicated to delivering exceptional services tailored to meet the unique needs of each customer, backed by our unwavering commitment to quality, innovation, and integrity.
+          </p>
         </div>
       </div>
 
-      <h3 class="fade-in">Industries We Serve</h3>
-      <ul class="about-values animate">
-        <li><i class="fas fa-school"></i> Schools & Academic Institutions</li>
-        <li><i class="fas fa-hotel"></i> Hotels, Resorts & Apartments</li>
-        <li><i class="fas fa-clinic-medical"></i> Hospitals & Health Centers</li>
-        <li><i class="fas fa-store"></i> Supermarkets & Shopping Malls</li>
-        <li><i class="fas fa-industry"></i> Factories & Warehouses</li>
-        <li><i class="fas fa-building"></i> Corporate Offices & Commercial Buildings</li>
+      <!-- Vision -->
+      <div class="mv-block slide-in-right">
+        <div class="mv-text">
+          <h3 class="mv-heading vision">Vision</h3>
+          <p>
+            To become the foremost provider of cutting-edge fire and safety solutions, setting the benchmark for excellence and innovation in the industry. We aspire to safeguard lives, protect property, and promote peace of mind for our clients across Kenya and beyond.
+          </p>
+        </div>
+        <div class="mv-icon">
+          <img src="images/vision.jpg" alt="Vision Icon">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="core-values-section fade-up">
+  <div class="container">
+    <h2 class="section-title">Our Core Values</h2>
+    <p class="section-intro">At Badgertech Solutions Ltd, our operations are guided by principles that reflect our unwavering commitment to quality, integrity, and client satisfaction.</p>
+    
+    <div class="values-grid">
+      <div class="value-card fade-up">
+        <i class="fas fa-star"></i>
+        <h4>Excellence</h4>
+        <p>We deliver unmatched quality in every service, ensuring our clients receive only the best fire and safety solutions.</p>
+      </div>
+
+      <div class="value-card fade-left">
+        <i class="fas fa-handshake"></i>
+        <h4>Integrity</h4>
+        <p>We operate with honesty, transparency, and professionalism in all our dealings—building lasting trust with every client.</p>
+      </div>
+
+      <div class="value-card fade-right">
+        <i class="fas fa-lightbulb"></i>
+        <h4>Innovation</h4>
+        <p>We embrace smart, forward-thinking solutions and technology that enhance efficiency and safety in our services.</p>
+      </div>
+
+      <div class="value-card fade-up">
+        <i class="fas fa-user-friends"></i>
+        <h4>Customer-Centricity</h4>
+        <p>Our clients are our priority. We tailor every project to meet their unique needs and exceed expectations.</p>
+      </div>
+
+      <div class="value-card fade-left">
+        <i class="fas fa-chart-line"></i>
+        <h4>Continuous Improvement</h4>
+        <p>We strive to grow and evolve—investing in training, new technologies, and better ways to serve our customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="approach-section fade-in-right">
+  <div class="container approach-content">
+    <div class="approach-image">
+      <img src="images/training.jpg" alt="Our Approach - Teamwork" />
+    </div>
+    <div class="approach-text">
+      <h2>Our Approach</h2>
+      <p>At Badgertech Solutions Ltd, our approach is built on precision, communication, and reliability. Every project begins with a clear understanding of the client's needs through on-site assessments, followed by custom-tailored safety and security solutions.</p>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> We listen and assess thoroughly before we act</li>
+        <li><i class="fas fa-cogs"></i> Each solution is tailor-made – no copy-paste designs</li>
+        <li><i class="fas fa-user-shield"></i> Compliance and safety are at the heart of every step</li>
+        <li><i class="fas fa-handshake"></i> We engage clients transparently from start to finish</li>
       </ul>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="sustainability-commitment">
+  <div class="container">
+    <h2 class="section-title fade-up">Sustainability & Safety Commitment</h2>
+
+    <div class="sustainability-content">
+      <div class="sustainability-text slide-in-left">
+        <p>
+          At Badgertech Solutions Ltd, sustainability and safety are embedded in every solution we provide. Whether it's fire suppression systems or electronic surveillance, we implement technology that enhances safety while reducing environmental impact.
+        </p>
+        <p>
+          We prioritize clean agent fire suppression systems, energy-efficient surveillance installations, and recyclable personal protective equipment. Our training programs promote safe handling of equipment and emergency response protocols to safeguard lives and infrastructure.
+        </p>
+        <p>
+          Our goal is to deliver reliable safety solutions that protect today and preserve tomorrow — responsibly and sustainably.
+        </p>
+      </div>
+
+      <div class="sustainability-image slide-in-right">
+        <img src="images/sustainability.jpg" alt="Sustainable Fire Safety - Badgertech" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="innovation-technology">
+  <div class="container">
+    <h2 class="section-title fade-up">Innovation & Technology</h2>
+
+    <div class="innovation-wrapper">
+      <div class="innovation-image slide-in-left">
+        <img src="images/innovation.jpg" alt="Badgertech Technology" />
+      </div>
+
+      <div class="innovation-text slide-in-right">
+        <p>
+          At Badgertech, innovation drives everything we do. We constantly explore emerging safety technologies to bring our clients smarter, faster, and more effective solutions.
+        </p>
+        <p>
+          From biometric access control to clean agent fire suppression systems, we combine advanced tools with deep technical knowledge to provide world-class safety infrastructure.
+        </p>
+        <p>
+          Our technicians undergo regular training on new equipment, compliance regulations, and digital integration to ensure we're not just keeping up — we're leading.
+        </p>
+        <p>
+          Whether you need AI-powered surveillance, GSM-linked alarms, or integrated fire and access solutions — we deliver future-ready protection for every space.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="career-section">
+  <div class="container">
+    <h2 class="section-title fade-up">Career Opportunities</h2>
+
+    <div class="career-wrapper">
+      <div class="career-text slide-in-left">
+        <p>
+          At Badgertech Solutions Ltd, we believe in building not just safety systems — but careers. Our team is made up of passionate, skilled, and dedicated professionals who share a commitment to protecting lives and property.
+        </p>
+        <p>
+          We offer exciting opportunities across fire safety, electrical engineering, security systems, field operations, and administration. Our culture fosters growth, collaboration, and learning — with frequent training and certification programs.
+        </p>
+        <p>
+          Whether you’re a graduate, technician, or industry expert, Badgertech is the place to grow your career in a company that’s making a real difference.
+        </p>
+        <a href="mailto:info@badgertech.co.ke" class="btn">Send Your CV</a>
+      </div>
+
+      <div class="career-image slide-in-right">
+        <img src="images/career.jpg" alt="Career Opportunities at Badgertech">
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="footer fade-in">
@@ -126,7 +268,7 @@
 
         <div class="footer-contact">
           <h4>Contact Us</h4>
-          <p><i class="fas fa-envelope"></i>info@badgertech.co.ke</p>
+          <p><i class="fas fa-envelope"></i> info@badgertech.co.ke</p>
           <p><i class="fas fa-phone-alt"></i> +254 741 591327 / +254 741 782 467</p>
           <p><i class="fas fa-map-marker-alt"></i> Munyu Road, P.O Box 42510 – 00100, Nairobi</p>
           <div class="social-icons">
@@ -143,6 +285,42 @@
     </div>
   </footer>
 
+    <!-- Floating WhatsApp Button -->
+<div class="whatsapp-widget" id="whatsappWidget">
+  <div class="whatsapp-header">
+    <img src="images/logo.png" alt="Badgertech Logo">
+    <p>Our customer support team is here to answer your questions. Ask us anything!</p>
+  </div>
+  <div class="whatsapp-body">
+    <input type="text" placeholder="Hello, how can we help?" id="whatsappInput">
+    <button onclick="sendWhatsAppMessage()">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Toggle Button -->
+<div class="whatsapp-toggle" onclick="toggleWhatsAppWidget()">
+  <i class="fab fa-whatsapp"></i>
+  <span>Hi, how can we help?</span>
+</div>
+
+  <script>
+  const elementsToAnimate = document.querySelectorAll('.fade-left, .fade-right, .fade-up, .fade-down, .fade-in-left, .fade-in-right, .slide-in-left, .slide-in-right');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+}, { threshold: 0.1 });
+
+elementsToAnimate.forEach(el => observer.observe(el));
+
+</script>
 
 </body>
 </html>
