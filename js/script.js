@@ -17,7 +17,7 @@ function sendWhatsAppMessage() {
     return;
   }
 
-  const phoneNumber = "254740047243"; // Your WhatsApp number
+  const phoneNumber = "254741591327";
   const encodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
@@ -40,3 +40,21 @@ function sendWhatsAppMessage() {
     });
   });
 
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const answer = btn.nextElementSibling;
+      const isActive = btn.classList.contains("active");
+
+      document.querySelectorAll(".faq-question").forEach(q => {
+        q.classList.remove("active");
+        q.nextElementSibling.style.maxHeight = null;
+        q.nextElementSibling.classList.remove("fade-expand");
+      });
+
+      if (!isActive) {
+        btn.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        answer.classList.add("fade-expand");
+      }
+    });
+  });
